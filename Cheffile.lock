@@ -1,0 +1,49 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    dmg (1.1.0)
+
+GIT
+  remote: git://github.com/pivotal-sprout/sprout.git
+  path: osx
+  ref: master
+  sha: 4bd50d39510bd0c631fb579dc44401c1e38c6baa
+  specs:
+    osx (0.1.0)
+
+GIT
+  remote: git://github.com/pivotal-sprout/sprout.git
+  path: pivotal_workstation
+  ref: master
+  sha: 4bd50d39510bd0c631fb579dc44401c1e38c6baa
+  specs:
+    pivotal_workstation (1.0.0)
+      dmg (>= 0.0.0)
+      osx (>= 0.0.0)
+      sprout-osx-apps (>= 0.0.0)
+      sprout-osx-settings (>= 0.0.0)
+
+GIT
+  remote: git://github.com/pivotal-sprout/sprout.git
+  path: sprout-osx-apps
+  ref: master
+  sha: 4bd50d39510bd0c631fb579dc44401c1e38c6baa
+  specs:
+    sprout-osx-apps (0.1.0)
+      dmg (>= 0.0.0)
+
+GIT
+  remote: git://github.com/pivotal-sprout/sprout.git
+  path: sprout-osx-settings
+  ref: master
+  sha: 4bd50d39510bd0c631fb579dc44401c1e38c6baa
+  specs:
+    sprout-osx-settings (0.1.0)
+      osx (>= 0.0.0)
+
+DEPENDENCIES
+  osx (>= 0)
+  pivotal_workstation (>= 0)
+  sprout-osx-apps (>= 0)
+  sprout-osx-settings (>= 0)
+
