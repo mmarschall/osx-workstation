@@ -1,2 +1,7 @@
 recipes:
 - sprout-osx-apps::freeruler 
+- sprout-osx-settings::dock_preferences
+
+node_attributes:
+  dock_preferences:
+    orientation: left
